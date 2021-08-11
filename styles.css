@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: #282828;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: all 0.8s ease;
+}
+
+.empty {
+  height: 8rem;
+  width: 8rem;
+  margin: 0.6rem;
+  border: solid 3px black;
+  background-color: #c5c5c5;
+}
+.fill {
+  background-image: url("https://source.unsplash.com/random/150x150");
+  height: 100%;
+}
+
+.hold {
+  border: 5px solid #ccc;
+}
+
+.hovered {
+  background-color: rgb(80, 80, 80);
+  border-color: #fff;
+  border-style: dashed;
+}
+
+@media (max-width: 720px) {
+  body {
+    flex-direction: column;
+  }
+}
